@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1c88901-6688-4ed7-a3a2-d148cebb82a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="d1c88901-6688-4ed7-a3a2-d148cebb82a6" name="Changes" comment="-used cogs to organize the code&#10;-added load, unload and reload to help in development" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +71,29 @@
       <option name="presentableId" value="Default" />
       <updated>1631262334535</updated>
     </task>
+    <task id="LOCAL-00001" summary="-used cogs to organize the code&#10;-added load, unload and reload to help in development">
+      <created>1631276944349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631276944349</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="-used cogs to organize the code&#10;-added load, unload and reload to help in development" />
+    <option name="LAST_COMMIT_MESSAGE" value="-used cogs to organize the code&#10;-added load, unload and reload to help in development" />
   </component>
 </project>
