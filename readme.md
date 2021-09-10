@@ -1,6 +1,6 @@
 # Health-bot :heartpulse: 
 
-health-bot is a simple bot designed to help you stay healthy while you  
+health-bot is a simple discord bot designed to help you stay healthy while you  
 work or play video games.
 
 ### Future ad ons :star2:
