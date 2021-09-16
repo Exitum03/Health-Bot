@@ -2,7 +2,7 @@ from discord.ext import commands
 import os
 
 bot = commands.Bot(command_prefix="-")
-token = ""
+token = "ODgyNDY2NTg2Njc2NTYzOTg4.YS7zDQ.0VrrpnzoCBdmqSMIxpTgARTQr14"
 
 
 # used to load unloaded cogs while the bot is running
@@ -25,7 +25,7 @@ async def reload(ctx, extension):
     await ctx.send(f"{extension} has been reloaded")
 
 
-# loads the cogs inside the specified folder
+# loads the cogs when the bot is up
 for files in os.listdir("./cogs"):
     if files.endswith(".py"):
         bot.load_extension(f"cogs.{files[:-3]}")

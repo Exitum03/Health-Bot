@@ -1,17 +1,24 @@
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 import random
+from itertools import cycle
 
 
 class OnStartUp(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        self.status = cycle(["Stay healthy", f"{self.bot.command_prefix}help"])
 
     # events
     @commands.Cog.listener()
     async def on_ready(self):
-        await self.bot.change_presence(activity=discord.Game("-help"))
-        print("Bot is ready")
+        print(f"{self.bot.user} is ready")
+        self.change_status.start()
+
+    # background task
+    @tasks.loop(seconds=10)
+    async def change_status(self):
+        await self.bot.change_presence(activity=discord.Game(next(self.status)))
 
     # commands
     @commands.command()
@@ -41,5 +48,7 @@ class OnStartUp(commands.Cog):
                        f"\n Answer: {random.choice(response)}")
 
 
+# gets called when the cog is loaded
 def setup(bot):
     bot.add_cog(OnStartUp(bot))
+
