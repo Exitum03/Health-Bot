@@ -2,7 +2,7 @@ from discord.ext import commands
 import os
 
 bot = commands.Bot(command_prefix="-")
-token = ""
+token = "ODgyNDY2NTg2Njc2NTYzOTg4.YS7zDQ.9zxbp1Zmb8rAoc2dIhocaEk0zMA"
 
 
 # used to load unloaded cogs while the bot is running

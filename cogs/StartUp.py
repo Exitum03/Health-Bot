@@ -19,6 +19,11 @@ class OnStartUp(commands.Cog):
     async def change_status(self):
         await self.bot.change_presence(activity=discord.Game(next(self.status)))
 
+    # commands
+    @commands.command()
+    async def test(self, ctx):
+        await ctx.send("TEST")
+
 
 # gets called when the cog is loaded
 def setup(bot):
