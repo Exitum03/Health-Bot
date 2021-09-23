@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1c88901-6688-4ed7-a3a2-d148cebb82a6" name="Changes" comment="-used cogs to organize the code&#10;-added load, unload and reload to help in development">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/OnStartUp.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/OnStartUp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/OnStartUp.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/StartUp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

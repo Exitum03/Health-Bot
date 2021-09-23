@@ -3,7 +3,7 @@ from discord.ext import commands, tasks
 from itertools import cycle
 
 
-class OnStartUp(commands.Cog):
+class StartUp(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.status = cycle(["Stay healthy", f"{self.bot.command_prefix}help"])
@@ -17,15 +17,10 @@ class OnStartUp(commands.Cog):
     # background task
     @tasks.loop(seconds=10)
     async def change_status(self):
+        # changes the bot status every 10s
         await self.bot.change_presence(activity=discord.Game(next(self.status)))
-
-    # commands
-    @commands.command()
-    async def test(self, ctx):
-        await ctx.send("TEST")
 
 
 # gets called when the cog is loaded
 def setup(bot):
-    bot.add_cog(OnStartUp(bot))
-
+    bot.add_cog(StartUp(bot))
